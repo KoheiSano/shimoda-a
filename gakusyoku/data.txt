@@ -1,0 +1,28 @@
+本	aaa
+本	aaa
+E1742067	aaaad
+E1742067	aaaad
+E1742067	aaaad
+田中太郎	カキフライ不味い
+田中太郎	あああ
+田中太郎	zzz
+田中太郎	zzz
+田中太郎	zzz
+suica	ああ
+suica	ああ
+suica	ああ
+suica	ああ
+suica	ああ
+suica	ああ
+suica	ああ
+suica	ああ
+suica	ああ
+suica	ああ
+E1742067	s
+
+]
+E1742067	s
+
+]
+田中太郎	aaa
+suica	ああ
