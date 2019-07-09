@@ -61,14 +61,14 @@ print '<a href="add form(add).php">登録はこちら</a><br />';
 
 print '<br />';
 print '<form method="get" action="edit.php">';
-print '商品修正：商品名';
+print '商品修正：商品ID';
 print '<input type="number" name="procode" style="width:100px">';
 print '<input type="submit" value="決定">';
 print '</form>';
 
 print '<br />';
 print '<form method="get" action="delete.php">';
-print '商品削除：商品名';
+print '商品削除：商品ID';
 print '<input type="number" name="procode" style="width:100px">';
 print '<input type="submit" value="決定">';
 print '</form>';
@@ -129,14 +129,14 @@ print '<a href="add form(add).1.php">登録はこちら</a><br />';
 
 print '<br />';
 print '<form method="get" action="edit.1.php">';
-print '商品修正：商品名';
+print '商品修正：商品ID';
 print '<input type="number" name="procode" style="width:100px">';
 print '<input type="submit" value="決定">';
 print '</form>';
 
 print '<br />';
 print '<form method="get" action="delete.1.php">';
-print '商品削除：商品名';
+print '商品削除：商品ID';
 print '<input type="number" name="procode" style="width:100px">';
 print '<input type="submit" value="決定">';
 print '</form>';
@@ -279,7 +279,20 @@ catch (Exception $e)
            
 </form>
 
+
+
 <?php
+$dsn='mysql:dbname=study;host=localhost;charset=utf8';
+$user='root';
+$password='';
+$dbh=new PDO($dsn,$user,$password);
+$dbh->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+
+$sql='SELECT code,time,konn FROM thudakonn WHERE 1';
+$stmt=$dbh->prepare($sql);
+$stmt->execute();
+
+$dbh=null;
 print '<br /><br /><br />';
 print '津田沼キャンパスの混雑度<br /><br />';
 
